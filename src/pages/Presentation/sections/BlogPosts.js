@@ -148,7 +148,7 @@ function BlogPosts() {
   ];
   return (
     <section className={styles['blog-section']}>
-    // blog section
+    
     <div className={styles['blog-posts-section']}>
       <h2>Latest Blog Posts</h2>
       <h2>Learning Industry Trends and Technological Advancements with HarInfo</h2>
@@ -157,7 +157,7 @@ function BlogPosts() {
       <div className={styles['blog-posts-grid']}>
         {blogPosts.map((post, index) => (
           <div key={index} className={styles['blog-post']}>
-            <img src={post.image} alt={post.title} />
+          
             <h3>{post.title}</h3>
             <p>{post.excerpt}</p>
             <a href={post.link}>Read More</a>
@@ -165,7 +165,7 @@ function BlogPosts() {
         ))}
       </div>
     </div>
-    // News section
+
     <div className={styles['blog-posts-section']}>
       <h2>Latest Blog Posts</h2>
       <h2>Learning Industry Trends and Technological Advancements with HarInfo</h2>
@@ -174,7 +174,7 @@ function BlogPosts() {
       <div className={styles['blog-posts-grid']}>
         {news.map((news, index) => (
           <div key={index} className={styles['blog-post']}>
-            <img src={news.image} alt={news.title} />
+            
             <h3>{news.title}</h3>
             <p>{news.excerpt}</p>
             <a href={news.link}>Read More</a>
@@ -195,8 +195,7 @@ function BlogPosts() {
         <p>Stay updated with the latest trends in technology, innovation, and business solutions by subscribing to our newsletter. Get insights, tips, and news delivered straight to your inbox, and never miss out on what’s happening in the world of HarInfo. Subscribe to our newsletter today.</p>
         <form>
           <div className={styles['subscription-form']}>
-            <label>Email:</label>
-            <input type="email" />
+            <input type="email" placeholder="Enter Email Address" />
             <button type="submit">Subscribe</button>
           </div>
         </form>
