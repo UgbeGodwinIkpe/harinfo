@@ -117,31 +117,31 @@ function BlogPosts() {
     {
       title: 'Computex 2024 Highlights:',
       image: 'url',
-      excerpt: 'Computex 2024 has brought several exciting technological advancements to the forefront. Lexar introduced new storage solutions, including PCIe Gen 5.0 NVMe SSDs that boast impressive speeds, making them ideal for high-performance tasks like gaming and data-intensive applications [[❞]] \nAdditionally, MSI showcased the world’s first AI gaming monitor, the MSI MEG 321URX QD-OLED, which uses machine learning to highlight enemy positions during gameplay, revolutionizing the gaming experience [[❞]]',
+      excerpt: 'Computex 2024 has brought several exciting technological advancements to the forefront. Lexar introduced new storage solutions, including PCIe Gen 5.0 NVMe SSDs that boast impressive speeds, making them ideal for high-performance tasks like gaming and data-intensive applications \nAdditionally, MSI showcased the world’s first AI gaming monitor, the MSI MEG 321URX QD-OLED, which uses machine learning to highlight enemy positions during gameplay, revolutionizing the gaming experience',
       link: 'https://www.techradar.com/computing/computex-2024',
     },
     {
       title: 'Advances in Semiconductor Manufacturing:',
       image: 'url',
-      excerpt: "The semiconductor industry is witnessing significant developments, particularly with TSMC, Intel, and Samsung expanding their advanced packaging capacities in Japan. These moves are part of broader efforts to revitalize Japan’s semiconductor manufacturing ecosystem. TSMC, in collaboration with Sony and Toyota, is investing over $20 billion in new facilities [[❞]]\n Furthermore, Intel's new Lunar Lake processors, announced at Computex 2024, promise enhanced AI capabilities and improved power efficiency, signaling a leap forward in processor technology [[❞]",
+      excerpt: "The semiconductor industry is witnessing significant developments, particularly with TSMC, Intel, and Samsung expanding their advanced packaging capacities in Japan. These moves are part of broader efforts to revitalize Japan’s semiconductor manufacturing ecosystem. TSMC, in collaboration with Sony and Toyota, is investing over $20 billion in new facilities\n Furthermore, Intel's new Lunar Lake processors, announced at Computex 2024, promise enhanced AI capabilities and improved power efficiency, signaling a leap forward in processor technology [[❞]",
       link: 'https://www.sourcengine.com/blog/semiconductor-industry-news',
     },
     {
       title: "Qualcomm's Ambitious Goals:",
       image: 'url',
-      excerpt: "Qualcomm is making bold predictions about the future of its Snapdragon processors, aiming to capture over 50% of the Windows PC market by 2029. This ambitious goal, coupled with impressive demonstrations at Computex, positions Qualcomm as a formidable competitor to Intel and AMD [[❞]]",
+      excerpt: "Qualcomm is making bold predictions about the future of its Snapdragon processors, aiming to capture over 50% of the Windows PC market by 2029. This ambitious goal, coupled with impressive demonstrations at Computex, positions Qualcomm as a formidable competitor to Intel and AMD",
       link: 'https://www.techradar.com/computing/computex-2024',
     },
     {
       title: "AMD's New Motherboards and Processors:",
       image: 'url',
-      excerpt: "AMD announced the X870 and X870E motherboards for its upcoming Ryzen 9000 processors, offering improvements over previous generations and ensuring compatibility with older hardware. This announcement is part of AMD's strategy to provide powerful yet accessible upgrade paths for users [[❞]]",
+      excerpt: "AMD announced the X870 and X870E motherboards for its upcoming Ryzen 9000 processors, offering improvements over previous generations and ensuring compatibility with older hardware. This announcement is part of AMD's strategy to provide powerful yet accessible upgrade paths for users",
       link: 'https://www.techradar.com/computing/computex-2024',
     },
     {
       title: "Global Semiconductor Market Recovery:",
       image: 'url',
-      excerpt: "The semiconductor market is showing signs of recovery with a 15.2% increase in global sales year-on-year as of January 2024. This growth is driven by rising demand for AI-related components, though the industry continues to face challenges like production delays and inventory overhang [[❞]]",
+      excerpt: "The semiconductor market is showing signs of recovery with a 15.2% increase in global sales year-on-year as of January 2024. This growth is driven by rising demand for AI-related components, though the industry continues to face challenges like production delays and inventory overhang",
       link: 'https://www.sourcengine.com/blog/semiconductor-industry-news',
     },
     
@@ -160,7 +160,7 @@ function BlogPosts() {
           
             <h3>{post.title}</h3>
             <p>{post.excerpt}</p>
-            <a href={post.link}>Read More</a>
+           
           </div>
         ))}
       </div>
