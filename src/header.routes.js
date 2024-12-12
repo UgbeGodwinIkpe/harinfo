@@ -33,11 +33,6 @@ import Typography from "layouts/sections/elements/typography";
 
 const headerroutes = [
   {
-    name: "DOWNLOADS",
-    icon: <Icon>article</Icon>,
-    href: "#",
-  },
-  {
     name: "LOGIN",
     icon: <Icon>article</Icon>,
     href: "#",

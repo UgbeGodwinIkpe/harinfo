@@ -8,7 +8,7 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import MKTypography from "components/MKTypography";
 
 // Images
-import logoCT from "assets/images/logo-ct-dark.jpg";
+import logoCT from "assets/images/logoCT.jpg";
 
 const date = new Date().getFullYear();
 
@@ -74,7 +74,7 @@ export default {
       All rights reserved. Copyright &copy; {date} {" "}
       <MKTypography
         component="a"
-        href="https://www.harifo.com"
+        href="https://www.harinfo.com"
         target="_blank"
         rel="noreferrer"
         variant="button"

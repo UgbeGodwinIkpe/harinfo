@@ -27,35 +27,56 @@ import VideoSection from "pages/Presentation/sections/VideoSection";
 
 // Presentation page components
 import BuiltByDevelopers from "pages/Presentation/components/BuiltByDevelopers";
-
+//fontawesome icons
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook,
+  faTwitter,
+  faInstagram,
+  faLinkedin,
+  faYoutube,
+  faPinterest,
+  faGithub, } from '@fortawesome/free-brands-svg-icons';
 // Routes
 import headerroutes from "header.routes";
 import routes from "routes";
 import footerRoutes from "footer.routes";
-
+import styles from './styles.module.css';
 // Images
 import bgImage from "assets/images/bg-presentation.jpg";
+import logoCT from "assets/images/logoCT.jpg";
 
 function Presentation() {
   return (
     <>
-    <DefaultTopbar
-        action={{
-          type: "internal",
-          route: "#",
-          label: "DOWNLOAD",
-          color: "info",
-        }}
-        action={{
-          type: "internal",
-          route: "#",
-          label: "LOGIN",
-          color: "info",
-        }}
+    <div className={styles['top-bar']}>
+      <div className={styles['logo-div']}><img src={logoCT} alt="HarInfo"/></div>
+      <div className={styles['right-buttons']}>
+      <button className={styles['download-button']}>Downloads</button>
+        <button className={styles['login-button']}>Login</button>
         
-        routes={headerroutes}
-        fixed
-      />
+        <div className={styles['social-media-links']}>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faTwitter} />
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faFacebook} />
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faPinterest} />
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faYoutube} />
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
+        </div>
+      </div>
+    </div>
+    
       <DefaultNavbar
         routes={routes}
         action={{
@@ -112,7 +133,7 @@ function Presentation() {
             </MKTypography>
 
           </Grid>
-          <VideoSection />
+          
         </Container>
       </MKBox>
       <Card
@@ -126,7 +147,7 @@ function Presentation() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
-        
+        <VideoSection />
         <Information />
         <Container sx={{ mt: 6 }}>
           <BuiltByDevelopers />

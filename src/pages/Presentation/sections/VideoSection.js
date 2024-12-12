@@ -17,10 +17,11 @@ import facebookLogo from "assets/images/logos/gray-logos/logo-facebook.svg";
 import nasaLogo from "assets/images/logos/gray-logos/logo-nasa.svg";
 import vodafoneLogo from "assets/images/logos/gray-logos/logo-vodafone.svg";
 import digitalOceanLogo from "assets/images/logos/gray-logos/logo-digitalocean.svg";
-// import logoCT from "assets/images/logo-ct-dark.jpg";
+import logoCT from "assets/images/logoCT.jpg";
+import bgvideo from "assets/images/bgvideo.mp4";
 function VideoSection() {
   return (
-    <MKBox component="section" py={12}>
+    <MKBox component="section" py={2}>
       <Container>
         <Grid
           container
@@ -30,18 +31,15 @@ function VideoSection() {
           justifyContent="center"
           sx={{ mx: "auto", textAlign: "center" }}
         >
-          <MKTypography variant="h2" color="info">
-            <video 
+            <video src={bgvideo} 
                 style={{ width: '100%', height: 'auto' }} 
                 autoPlay 
                 loop 
                 muted
                 playsInline
+                type="video/mp4"
             >
-                <source src="assets/images/bgvideo.mp4" type="video/mp4" />
-                Your browser does not support the video.
             </video>
-          </MKTypography>
           
           
         </Grid>

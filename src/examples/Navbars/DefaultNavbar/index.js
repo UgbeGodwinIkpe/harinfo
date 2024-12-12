@@ -436,7 +436,7 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
   );
 
   return (
-    <Container sx={{ position: "relative", top: 20}}>
+    <Container sx={{ position: "relative", top: -20}}>
       <MKBox
         py={1}
         px={{ xs: 4, sm: transparent ? 2 : 3, lg: transparent ? 0 : 2 }}
@@ -462,8 +462,8 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
             py={transparent ? 1.5 : 0.75}
             pl={relative || transparent ? 0 : { xs: 0, lg: 1 }}
           >
-            <MKTypography variant="button" fontWeight="bold" color={light ? "white" : "dark"}>
-              <img src="{brand}" alt="harinfo" />{brand}
+            <MKTypography variant="button" fontSize="30px" fontFamily="Impact, sans-serif" fontWeight="800" color="#000435">
+              {brand}
             </MKTypography>
           </MKBox>
           <MKBox
@@ -537,7 +537,7 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
 
 // Setting default values for the props of DefaultNavbar
 DefaultNavbar.defaultProps = {
-  brand: "HARINFO",
+  brand: "harInfo",
   transparent: false,
   light: false,
   action: false,

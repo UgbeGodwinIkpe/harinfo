@@ -445,7 +445,7 @@ function DefaultTopbar({ brand, routes, transparent, light, action, sticky, rela
         width={relative ? "100%" : "calc(100% - 48px)"}
         borderRadius="xl"
         shadow={transparent ? "none" : "md"}
-        color={light ? "white" : "dark"}
+        // color={light ? "transparent" : "transparent"}
         position={relative ? "relative" : "absolute"}
         left={0}
         zIndex={3}
