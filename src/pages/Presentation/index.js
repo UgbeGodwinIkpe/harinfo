@@ -25,6 +25,7 @@ import Testimonials from "pages/Presentation/sections/Testimonials";
 import Download from "pages/Presentation/sections/Download";
 import VideoSection from "pages/Presentation/sections/VideoSection";
 import ClientsFeedbacks from "pages/Presentation/sections/ClientsFeedbacks";
+import BlogPosts from "pages/Presentation/sections/BlogPosts";
 
 // Presentation page components
 import BuiltByDevelopers from "pages/Presentation/components/BuiltByDevelopers";
@@ -233,6 +234,7 @@ function Presentation() {
         <Download />
         <Mvv />
         <ClientsFeedbacks />
+        <BlogPosts />
         <MKBox pt={18} pb={6}>
           <Container>
             <Grid container spacing={3}>
