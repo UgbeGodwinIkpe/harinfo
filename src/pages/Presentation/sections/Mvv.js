@@ -18,9 +18,9 @@ import bgBack from "assets/images/rotating-card-bg-back.jpeg";
 
 function Mvv() {
   return (
-    <MKBox component="section" py={6} my={6}>
+    <MKBox component="section" py={4} my={3}>
       <Container>
-        <h1 style={{textAlign:"center"}}>What We Stand For!</h1>
+        <h1 style={{textAlign:"center"}}>What We Stand For;</h1>
         <Grid container item xs={11} spacing={3} alignItems="center" sx={{ mx: "auto" }}>
           <Grid item xs={12} lg={4} sx={{ mx: "auto" }}>
             <RotatingCard>
