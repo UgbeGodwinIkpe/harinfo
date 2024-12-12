@@ -1,17 +1,3 @@
-/*
-=========================================================
-* Material Kit 2 React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
 
 // @mui material components
 import Container from "@mui/material/Container";
@@ -32,8 +18,8 @@ function BuiltByDevelopers() {
       display="flex"
       alignItems="center"
       borderRadius="xl"
-      my={2}
-      py={6}
+      my={1}
+      py={3}
       sx={{
         backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
           `${linearGradient(
@@ -46,10 +32,10 @@ function BuiltByDevelopers() {
     >
       <Container>
         <Grid container item xs={12} lg={8} sx={{ ml: { xs: 0, lg: 8 } }}>
-          <MKTypography variant="h1" color="white" fontWeight="bold">
+          <MKTypography variant="h3" color="white" fontWeight="bold">
             <u>Our Portfolio</u>
           </MKTypography>
-          <MKTypography variant="h4" color="white" mb={1}>
+          <MKTypography variant="h5" color="white" mb={1}>
             We deal with data, and we love numbers. So, we are more than excited to show you ours.
           </MKTypography>
           <MKTypography variant="body1" color="white" opacity={0.8} mb={2}>
@@ -118,7 +104,7 @@ function BuiltByDevelopers() {
     >
       <Container>
         <Grid container item xs={12} lg={11} sx={{ ml: { xs: 0, lg: 10 } }}>
-          <MKTypography variant="h1" color="white" fontWeight="bold">
+          <MKTypography variant="h3" color="white" fontWeight="bold">
             <u>How We Do What We Do</u>
           </MKTypography>
           <MKTypography variant="h5" color="white" mb={1}>

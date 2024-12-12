@@ -155,7 +155,7 @@ function Presentation() {
         <Container>
         <hr/>
         <Grid item xs={12} lg={5} ml="auto" sx={{ textAlign: { xs: "center", lg: "center" } }}>
-          <MKTypography variant="h2" fontWeight="bold" mb={0.5}>
+          <MKTypography variant="h3" fontWeight="bold" mb={0.5}>
                   Why Clients Love Us, And Why Prospects Choose Us
           </MKTypography>
         </Grid>

@@ -18,7 +18,7 @@ import bgBack from "assets/images/rotating-card-bg-back.jpeg";
 
 function Information() {
   return (
-    <MKBox component="section" py={6} my={6}>
+    <MKBox component="section" py={3} my={2}>
       <Container>
         <Grid container item xs={11} spacing={3} alignItems="center" sx={{ mx: "auto" }}>
           <Grid item xs={12} lg={4} sx={{ mx: "auto" }}>
@@ -49,13 +49,13 @@ function Information() {
             <Grid container spacing={3}>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  title="Our Mission"
+                  title="Mission"
                   description="Our mission is to empower businesses of all sizes with innovation, technology, and business strategies that would see them go from startups to large enterprises, and large enterprises to big corporations."
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  title="Our Prominence In The Tech Sector"
+                  title="Prominence In The Tech Sector"
                   description="Our prominence in the tech sector is unrivaled — we have grown quickly over the years to become one of the industry’s frontrunners. But sadly, we have not achieved all of our goals yet, until we have helped you achieve yours."
                 />
               </Grid>
