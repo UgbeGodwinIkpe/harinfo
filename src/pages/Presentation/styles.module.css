@@ -80,3 +80,42 @@
   display: none;
 }
 }
+
+/*code for clients feebacks section*/
+.testimonials-section {
+  background-color: #f7f7f7;
+  padding: 50px;
+  text-align: center;
+}
+
+.testimonial-slider {
+  position: relative;
+  width: 80%;
+  margin: 40px auto;
+}
+
+.testimonial {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.slider-controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.slider-controls button {
+  background-color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.slider-controls button:hover {
+  background-color: #f7f7f7;
+}
