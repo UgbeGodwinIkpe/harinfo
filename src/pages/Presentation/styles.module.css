@@ -126,6 +126,11 @@
 }
 
 /*styles for blog post section*/
+.blog-section {
+  background-color: #f7f7f7;
+  /*padding: 50px;*/
+  text-align: justify;
+}
 .blog-posts-section {
   background-color: #f7f7f7;
   padding: 50px;
@@ -163,4 +168,19 @@
   .blog-posts-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/*style for news subscription form*/
+.subscription-form{
+  width: 300px;
+  background-color: #000435;
+  padding: 5px;
+}
+.subscription-form input{
+  width: 100%;
+}
+.subscription-form button{
+  width: 100%;
+  background-color: #FFFFFF;
+  color: #000435;
 }
