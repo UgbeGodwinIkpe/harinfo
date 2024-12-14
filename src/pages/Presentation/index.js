@@ -26,6 +26,9 @@ import Download from "pages/Presentation/sections/Download";
 import VideoSection from "pages/Presentation/sections/VideoSection";
 import ClientsFeedbacks from "pages/Presentation/sections/ClientsFeedbacks";
 import BlogPosts from "pages/Presentation/sections/BlogPosts";
+import FAQs from "pages/Presentation/sections/FAQs";
+import JoinUs from "pages/Presentation/sections/JoinUs";
+import Careers from "pages/Presentation/sections/Careers";
 
 // Presentation page components
 import BuiltByDevelopers from "pages/Presentation/components/BuiltByDevelopers";
@@ -235,59 +238,20 @@ function Presentation() {
         <Mvv />
         <ClientsFeedbacks />
         <BlogPosts />
-        <MKBox pt={18} pb={6}>
+        <MKBox pt={5} pb={6}>
           <Container>
-            <Grid container spacing={3}>
-              <Grid item xs={12} lg={5} ml="auto" sx={{ textAlign: { xs: "center", lg: "left" } }}>
-                <MKTypography variant="h4" fontWeight="bold" mb={0.5}>
-                  Thank you for your support!
-                </MKTypography>
-                <MKTypography variant="body1" color="text">
-                  We deliver the best web products
-                </MKTypography>
-              </Grid>
-              <Grid
-                item
-                xs={12}
-                lg={5}
-                my={{ xs: 5, lg: "auto" }}
-                mr={{ xs: 0, lg: "auto" }}
-                sx={{ textAlign: { xs: "center", lg: "right" } }}
-              >
-                <MKSocialButton
-                  component="a"
-                  href=""
-                  target="_blank"
-                  color="twitter"
-                  sx={{ mr: 1 }}
-                >
-                  <i className="fab fa-twitter" />
-                  &nbsp;Tweet
-                </MKSocialButton>
-                <MKSocialButton
-                  component="a"
-                  href=""
-                  target="_blank"
-                  color="facebook"
-                  sx={{ mr: 1 }}
-                >
-                  <i className="fab fa-facebook" />
-                  &nbsp;Share
-                </MKSocialButton>
-                <MKSocialButton
-                  component="a"
-                  href=""
-                  target="_blank"
-                  color="pinterest"
-                >
-                  <i className="fab fa-pinterest" />
-                  &nbsp;Pin it
-                </MKSocialButton>
-              </Grid>
-            </Grid>
+            <FAQs />
+          </Container>
+        </MKBox>
+        <MKBox pt={5} pb={6}>
+          <Container>
+            <JoinUs />
           </Container>
         </MKBox>
       </Card>
+      <MKBox pt={6} px={1} mt={6}>
+        <Careers />
+      </MKBox>
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
       </MKBox>

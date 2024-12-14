@@ -123,7 +123,7 @@ function BlogPosts() {
     {
       title: 'Advances in Semiconductor Manufacturing:',
       image: 'url',
-      excerpt: "The semiconductor industry is witnessing significant developments, particularly with TSMC, Intel, and Samsung expanding their advanced packaging capacities in Japan. These moves are part of broader efforts to revitalize Japan’s semiconductor manufacturing ecosystem. TSMC, in collaboration with Sony and Toyota, is investing over $20 billion in new facilities\n Furthermore, Intel's new Lunar Lake processors, announced at Computex 2024, promise enhanced AI capabilities and improved power efficiency, signaling a leap forward in processor technology [[❞]",
+      excerpt: "The semiconductor industry is witnessing significant developments, particularly with TSMC, Intel, and Samsung expanding their advanced packaging capacities in Japan. These moves are part of broader efforts to revitalize Japan’s semiconductor manufacturing ecosystem. TSMC, in collaboration with Sony and Toyota, is investing over $20 billion in new facilities\n Furthermore, Intel's new Lunar Lake processors, announced at Computex 2024, promise enhanced AI capabilities and improved power efficiency, signaling a leap forward in processor technology",
       link: 'https://www.sourcengine.com/blog/semiconductor-industry-news',
     },
     {
@@ -144,14 +144,19 @@ function BlogPosts() {
       excerpt: "The semiconductor market is showing signs of recovery with a 15.2% increase in global sales year-on-year as of January 2024. This growth is driven by rising demand for AI-related components, though the industry continues to face challenges like production delays and inventory overhang",
       link: 'https://www.sourcengine.com/blog/semiconductor-industry-news',
     },
-    
+    {
+      title: "",
+      image: 'url',
+      excerpt: "These developments underscore the rapid pace of innovation and competition in the technology sector, promising exciting advancements and improvements in various applications from gaming to enterprise solutions. For more detailed insights and updates, you can explore the full articles on TechRadar and Sourcengine.\nNever run out of information. Stay up to date with all tech news on our website. We got something for you always, this means we will be expecting you to visit often.",
+      link: '',
+    },
   ];
   return (
     <section className={styles['blog-section']}>
     
     <div className={styles['blog-posts-section']}>
       <h2>Latest Blog Posts</h2>
-      <h2>Learning Industry Trends and Technological Advancements with HarInfo</h2>
+      <h5>Learning Industry Trends and Technological Advancements with HarInfo</h5>
       <p>Welcome to the HarInfo blog, your go-to resource for insights into the latest industry trends, business tips, and technological advancements. In this post, we look deep into the dynamic landscape of modern business, offering valuable perspectives on how to stay ahead of the curve in a rapidly evolving market. Whether you are a startup, an SME, or a large enterprise, our expertise can help you navigate the complexities of today's business environment and leverage the latest technologies for sustained success.</p>
     
       <div className={styles['blog-posts-grid']}>
@@ -167,10 +172,8 @@ function BlogPosts() {
     </div>
 
     <div className={styles['blog-posts-section']}>
-      <h2>Latest Blog Posts</h2>
-      <h2>Learning Industry Trends and Technological Advancements with HarInfo</h2>
-      <p>Welcome to the HarInfo blog, your go-to resource for insights into the latest industry trends, business tips, and technological advancements. In this post, we look deep into the dynamic landscape of modern business, offering valuable perspectives on how to stay ahead of the curve in a rapidly evolving market. Whether you are a startup, an SME, or a large enterprise, our expertise can help you navigate the complexities of today's business environment and leverage the latest technologies for sustained success.</p>
-    
+      <h2>LATEST TECHNOLOGY NEWS - June 2024</h2>
+      
       <div className={styles['blog-posts-grid']}>
         {news.map((news, index) => (
           <div key={index} className={styles['blog-post']}>
@@ -181,8 +184,6 @@ function BlogPosts() {
           </div>
         ))}
       </div>
-      <p>These developments underscore the rapid pace of innovation and competition in the technology sector, promising exciting advancements and improvements in various applications from gaming to enterprise solutions. For more detailed insights and updates, you can explore the full articles on TechRadar and Sourcengine.</p>
-      <p>Never run out of information. Stay up to date with all tech news on our website. We got something for you always, this means we will be expecting you to visit often.</p>
     </div>
     <div className={styles['blog-posts-section']}>
       <h2>Summary</h2>
@@ -191,11 +192,12 @@ function BlogPosts() {
       <p>For more information on how HarInfo can help your business thrive, contact us today at info@harinfo.com</p>
       <p>Let's embark on a journey of growth and transformation together.</p>
       <div>
-        <h2>NEWSLETTERS</h2>
-        <p>Stay updated with the latest trends in technology, innovation, and business solutions by subscribing to our newsletter. Get insights, tips, and news delivered straight to your inbox, and never miss out on what’s happening in the world of HarInfo. Subscribe to our newsletter today.</p>
         <form>
           <div className={styles['subscription-form']}>
-            <input type="email" placeholder="Enter Email Address" />
+          <h4>NEWSLETTERS</h4>
+        <p>Stay updated with the latest trends in technology, innovation, and business solutions by subscribing to our newsletter. Get insights, tips, and news delivered straight to your inbox, and never miss out on what’s happening in the world of HarInfo. Subscribe to our newsletter today.</p>
+        
+            <input type="email" placeholder="Email Address" />
             <button type="submit">Subscribe</button>
           </div>
         </form>

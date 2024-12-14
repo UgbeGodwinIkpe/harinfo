@@ -462,7 +462,7 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
             py={transparent ? 1.5 : 0.75}
             pl={relative || transparent ? 0 : { xs: 0, lg: 1 }}
           >
-            <MKTypography variant="button" fontSize="30px" fontFamily="Impact, sans-serif" fontWeight="800" color="#000435">
+            <MKTypography variant="button" fontSize="30px" fontFamily="Impact, sans-serif" fontWeight="800" color="#041D56">
               {brand}
             </MKTypography>
           </MKBox>

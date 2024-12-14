@@ -1,0 +1,84 @@
+/* Styling for Join Us Section */
+.join-us {
+  position: relative;
+  background: url('https://source.unsplash.com/1920x1080/?teamwork,corporate') no-repeat center center/cover;
+  height: 100vh; /* Full height of viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.join-us-overlay {
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.join-us-content {
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  max-width: 600px;
+}
+
+.join-us-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.join-us-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.join-us-button {
+  background-color:#041D56; /*#007bff;*/
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.join-us-button:hover {
+  background-color:#ffffff;
+  color: #041D56;;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .join-us-content h1 {
+    font-size: 2rem;
+  }
+
+  .join-us-content p {
+    font-size: 1rem;
+  }
+
+  .join-us-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .join-us-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .join-us-content p {
+    font-size: 0.9rem;
+  }
+
+  .join-us-button {
+    padding: 8px 16px;
+    font-size: 0.8rem;
+  }
+}
