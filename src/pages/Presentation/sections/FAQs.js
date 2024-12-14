@@ -34,7 +34,7 @@ function FAQs() {
 
   return (
     <div style={{ maxWidth: '800px', margin: 'auto', padding: '20px' }}>
-      <h2 style={{ textAlign: 'center', marginBottom: '20px' }}>Frequently Asked Questions</h2>
+      <h2 style={{ textAlign: 'center', marginBottom: '15px', fontSize: '20px' }}>Frequently Asked Questions</h2>
       <div>
         {faqs.map((faq, index) => (
           <div 
@@ -44,6 +44,7 @@ function FAQs() {
               border: '1px solid #ccc', 
               borderRadius: '5px', 
               overflow: 'hidden',
+              fontSize: '15px',
               boxShadow: '0 2px 5px rgba(0,0,0,0.1)'
             }}
           >
@@ -51,7 +52,7 @@ function FAQs() {
               onClick={() => toggleFAQ(index)}
               style={{
                 cursor: 'pointer',
-                padding: '15px',
+                padding: '10px',
                 background: '#f9f9f9',
                 fontWeight: 'bold',
                 display: 'flex',
@@ -60,10 +61,10 @@ function FAQs() {
               }}
             >
               {faq.question}
-              <span style={{ fontSize: '20px' }}>{openFAQ === index ? '-' : '+'}</span>
+              <span style={{ fontSize: '15px' }}>{openFAQ === index ? '-' : '+'}</span>
             </div>
             {openFAQ === index && (
-              <div style={{ padding: '15px', background: '#fff', borderTop: '1px solid #ccc' }}>
+              <div style={{ padding: '15px', background: '#fff', borderTop: '1px solid #ccc', fontSize: '12px' }}>
                 {faq.answer}
               </div>
             )}

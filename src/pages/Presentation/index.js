@@ -143,7 +143,7 @@ function Presentation() {
       </MKBox>
       <Card
         sx={{
-          p: 2,
+          p: 1,
           mx: { xs: 2, lg: 3 },
           mt: -8,
           mb: 4,
@@ -154,13 +154,13 @@ function Presentation() {
       >
         <VideoSection />
         <Information />
-        <Container sx={{ mt: 6 }}>
+        <Container sx={{ mt: 2 }}>
           <BuiltByDevelopers />
         </Container>
         <Container>
         <hr/>
         <Grid item xs={12} lg={5} ml="auto" sx={{ textAlign: { xs: "center", lg: "center" } }}>
-          <MKTypography variant="h3" fontWeight="bold" mb={0.5}>
+          <MKTypography variant="h4" fontWeight="bold" mb={0.5}>
                   Why Clients Love Us, And Why Prospects Choose Us
           </MKTypography>
         </Grid>

@@ -26,20 +26,59 @@ import footerRoutes from "footer.routes";
 
 // Images
 import bgImage from "assets/images/bg-about-us.jpg";
+//fontawesome icons
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook,
+  faTwitter,
+  faInstagram,
+  faLinkedin,
+  faYoutube,
+  faPinterest,
+  faGithub, } from '@fortawesome/free-brands-svg-icons';
+import styles from './styles.module.css';
+import logoCT from "assets/images/logoCT.jpg";
 
 function AboutUs() {
   return (
     <>
+      <div className={styles['top-bar']}>
+      <div className={styles['logo-div']}><img src={logoCT} alt="HarInfo"/></div>
+      <div className={styles['right-buttons']}>
+      <button className={styles['download-button']}>Downloads</button>
+        <button className={styles['login-button']}>Login</button>
+        
+        <div className={styles['social-media-links']}>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faTwitter} />
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faFacebook} />
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faPinterest} />
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faYoutube} />
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
+        </div>
+      </div>
+    </div>
+    
       <DefaultNavbar
         routes={routes}
         action={{
-          type: "external",
+          type: "internal",
           route: "#",
-          label: "free download",
-          color: "default",
+          label: "LOGIN",
+          color: "info",
         }}
-        transparent
-        light
+        static
       />
       <MKBox
         minHeight="75vh"

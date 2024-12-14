@@ -1,17 +1,3 @@
-/*
-=========================================================
-* Material Kit 2 React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
 
 // @mui material components
 import Grid from "@mui/material/Grid";
@@ -32,20 +18,60 @@ import footerRoutes from "footer.routes";
 
 // Image
 import bgImage from "assets/images/illustrations/illustration-reset.jpg";
+//fontawesome icons
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook,
+  faTwitter,
+  faInstagram,
+  faLinkedin,
+  faYoutube,
+  faPinterest,
+  faGithub, } from '@fortawesome/free-brands-svg-icons';
+import styles from '../AboutUs/styles.module.css';
+import logoCT from "assets/images/logoCT.jpg";
 
 function ContactUs() {
   return (
     <>
+    <div className={styles['top-bar']}>
+      <div className={styles['logo-div']}><img src={logoCT} alt="HarInfo"/></div>
+      <div className={styles['right-buttons']}>
+      <button className={styles['download-button']}>Downloads</button>
+        <button className={styles['login-button']}>Login</button>
+        
+        <div className={styles['social-media-links']}>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faTwitter} />
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faFacebook} />
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faPinterest} />
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faYoutube} />
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
+        </div>
+      </div>
+    </div>
       <MKBox position="fixed" top="0.5rem" width="100%">
         <DefaultNavbar
-          routes={routes}
-          action={{
-            type: "external",
-            route: "https://www.creative-tim.com/product/material-kit-react",
-            label: "free download",
-            color: "info",
-          }}
-        />
+        routes={routes}
+        action={{
+          type: "internal",
+          route: "#",
+          label: "LOGIN",
+          color: "info",
+        }}
+        static
+      />
       </MKBox>
       <Grid container spacing={3} alignItems="center">
         <Grid item xs={12} lg={6}>
@@ -96,7 +122,7 @@ function ContactUs() {
             <MKBox p={3}>
               <MKTypography variant="body2" color="text" mb={3}>
                 For further questions, including partnership opportunities, please email
-                hello@creative-tim.com or contact using our contact form.
+                hello@harinfo.com or contact using our contact form.
               </MKTypography>
               <MKBox width="100%" component="form" method="post" autoComplete="off">
                 <Grid container spacing={3}>

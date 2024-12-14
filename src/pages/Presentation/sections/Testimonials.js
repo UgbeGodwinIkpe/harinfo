@@ -43,7 +43,7 @@ function Information() {
               item3="- Innovation"
               action={{
                   type: "internal",
-                  route: "#",
+                  route: "/services",
                   label: "Read more",
                 }}
             />

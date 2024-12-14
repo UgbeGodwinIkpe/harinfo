@@ -10,7 +10,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 // React themes
 import theme from "assets/theme";
 import Presentation from "layouts/pages/presentation";
-
+import Services from "layouts/pages/presentation"
 //React routes
 import routes from "routes";
 
@@ -44,6 +44,7 @@ export default function App() {
         <Routes > { getRoutes(routes) }
         <Route path = "/presentation" element = { <Presentation/> }/>
         <Route path = "*" element = { <Navigate to = "/presentation" /> }/>
+        <Route path = "/services" element = { <Services /> }/>
         </Routes>
         </ThemeProvider>
     );
