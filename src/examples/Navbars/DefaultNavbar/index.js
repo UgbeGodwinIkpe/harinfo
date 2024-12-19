@@ -29,7 +29,7 @@ import DefaultNavbarMobile from "examples/Navbars/DefaultNavbar/DefaultNavbarMob
 import breakpoints from "assets/theme/base/breakpoints";
 // logo
 // import logoCT from "assets/imges/logo-ct-dark.jpg";
-function DefaultNavbar({ brand, routes, transparent, light, action, sticky, relative, center }) {
+function DefaultNavbar({ brand, routes, transparent, light, info, primary, action, sticky, relative, center }) {
   const [dropdown, setDropdown] = useState("");
   const [dropdownEl, setDropdownEl] = useState("");
   const [dropdownName, setDropdownName] = useState("");
@@ -445,12 +445,12 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
         width={relative ? "100%" : "calc(100% - 48px)"}
         borderRadius="xl"
         shadow={transparent ? "none" : "md"}
-        color={light ? "white" : "dark"}
+        color={info}
         position={relative ? "relative" : "absolute"}
         left={0}
         zIndex={3}
         sx={({ palette: { transparent: transparentColor, white }, functions: { rgba } }) => ({
-          backgroundColor: transparent ? transparentColor.main : rgba(white.main, 0.8),
+          backgroundColor: {primary},
           backdropFilter: transparent ? "none" : `saturate(200%) blur(30px)`,
         })}
       >
@@ -462,12 +462,12 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
             py={transparent ? 1.5 : 0.75}
             pl={relative || transparent ? 0 : { xs: 0, lg: 1 }}
           >
-            <MKTypography variant="button" fontSize="30px" fontFamily="Impact, sans-serif" fontWeight="800" color="#041D56">
+            <MKTypography variant="button" fontSize="30px" fontFamily="Impact, sans-serif" fontWeight="800" color={info}>
               {brand}
             </MKTypography>
           </MKBox>
           <MKBox
-            color="inherit"
+            color={info}
             display={{ xs: "none", lg: "flex" }}
             ml="auto"
             mr={center ? "auto" : 0}
@@ -540,6 +540,8 @@ DefaultNavbar.defaultProps = {
   brand: "harInfo",
   transparent: false,
   light: false,
+  primary:false,
+  info:false,
   action: false,
   sticky: false,
   relative: false,
@@ -552,6 +554,8 @@ DefaultNavbar.propTypes = {
   routes: PropTypes.arrayOf(PropTypes.shape).isRequired,
   transparent: PropTypes.bool,
   light: PropTypes.bool,
+  primary: PropTypes.bool,
+  info: PropTypes.bool,
   action: PropTypes.oneOfType([
     PropTypes.bool,
     PropTypes.shape({

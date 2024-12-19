@@ -154,7 +154,7 @@ function Presentation() {
       >
         <VideoSection />
         <Information />
-        <Container sx={{ mt: 2 }}>
+        <Container sx={{ mt: 1 }}>
           <BuiltByDevelopers />
         </Container>
         <Container>

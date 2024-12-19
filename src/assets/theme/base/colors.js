@@ -1,22 +1,8 @@
-/**
-=========================================================
-* Material Kit 2 React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
 
 /**
- * The base colors for the Material Kit 2 React.
+ * The base colors for the project.
  * You can add new color using this file.
- * You can customized the colors for the entire Material Kit 2 React using thie file.
+ * You can customized the colors for the entire project React using thie file.
  */
 
 export default {
@@ -45,7 +31,7 @@ export default {
   },
 
   primary: {
-    main: "#e91e63",
+    main: "#00008B",
     focus: "#e91e63",
   },
 
@@ -55,7 +41,7 @@ export default {
   },
 
   info: {
-    main: "#1A73E8",
+    main: "#00FFFF",
     focus: "#1662C4",
   },
 
@@ -108,7 +94,7 @@ export default {
     },
 
     info: {
-      main: "#49a3f1",
+      main: "#00FFFF",
       state: "#1A73E8",
     },
 
@@ -133,7 +119,7 @@ export default {
     },
 
     dark: {
-      main: "#42424a",
+      main: "#00FFFF",
       state: "#191919",
     },
   },
@@ -202,7 +188,7 @@ export default {
 
   badgeColors: {
     primary: {
-      background: "#f8b3ca",
+      background: "#00008B",
       text: "#cc084b",
     },
 
@@ -212,8 +198,8 @@ export default {
     },
 
     info: {
-      background: "#aecef7",
-      text: "#095bc6",
+      background: "#00FFFF",
+      text: "#00FFFF",
     },
 
     success: {
@@ -245,7 +231,7 @@ export default {
   coloredShadows: {
     primary: "#e91e62",
     secondary: "#110e0e",
-    info: "#00bbd4",
+    info: "#00FFFF",
     success: "#4caf4f",
     warning: "#ff9900",
     error: "#f44336",

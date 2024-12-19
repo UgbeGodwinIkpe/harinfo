@@ -1,12 +1,14 @@
 :root{
-  --primary: #041D56;
+  --primary: rgb(0, 0, 139);;
+  --secondary: #00FFFF;
+  --white: #FFFFFF;
 }
 .top-bar {
   position: relative;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: var(--white);
   color: #fff;
   padding: 1rem;
   display: flex;
