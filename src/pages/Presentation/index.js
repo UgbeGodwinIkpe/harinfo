@@ -160,16 +160,16 @@ function Presentation() {
         <Container>
         <hr/>
         <Grid item xs={12} lg={5} ml="auto" sx={{ textAlign: { xs: "center", lg: "center" } }}>
-          <MKTypography variant="h4" fontWeight="bold" mb={0.5}>
+          <MKTypography variant="h3" fontWeight="bold" mb={0.5}>
                   Why Clients Love Us, And Why Prospects Choose Us
           </MKTypography>
         </Grid>
           <Grid container spacing={3}>
-            <Grid item xs={12} lg={4}>
+            <Grid item xs={12} lg={4} style={{alignItems:"center"}}>
               <FilledInfoCard
                 variant="gradient"
                 color="info"
-                // icon="flag"
+                icon="brush"
                 title="Expertise"
                 description="Top clients choose us because we are the preferred choice for myriad enterprises seeking transformative solutions. Our expertise is trusted by industry leaders who have witnessed, firsthand, the remarkable impact of our services. At HarInfo, we don't just provide services; we create partnerships. We convert your ideas into successful business ventures, ensuring your triumph is our triumph."
                 // action={{
@@ -183,7 +183,7 @@ function Presentation() {
               <FilledInfoCard
                 variant="gradient"
                 color="info"
-                // icon="flag"
+                icon="flag"
                 title="Corporate Solutions"
                 description="We help in the development of businesses, offering advanced corporate solutions. Our business support and full-stack teams are top professionals that understand what it means to grow a business exponentially. This is what we have been doing for many years on end."
                 
@@ -193,7 +193,7 @@ function Presentation() {
               <FilledInfoCard
                 variant="gradient"
                 color="info"
-                // icon="flag"
+                icon="schedule"
                 title="Customized Services"
                 description="Our ability to serve clients across various segments is a testament to our versatility and commitment. We take immense pride in our customized services, setting us apart in this competitive world. We embrace your business vision, nurture it with our expertise, and elevate it to realize its grandest potential."
                 
@@ -203,7 +203,7 @@ function Presentation() {
               <FilledInfoCard
                 variant="gradient"
                 color="info"
-                // icon="flag"
+                icon="handshake"
                 title="Client's Satisfaction"
                 description="YOUR DREAMS ARE OURS, YOUR BUSINESS GROWTH IS OUR PRIDE. Your dreams are ours, and we don't mind sleeping less for it. We want you to understand that helping you build your business builds our profile too. Who wouldn't want a win-win situation? You grow, we grow. Together."
                 
@@ -213,7 +213,7 @@ function Presentation() {
               <FilledInfoCard
                 variant="gradient"
                 color="info"
-                // icon="flag"
+                icon="support"
                 title="Continuous Support"
                 description="ICT solution is an ongoing process, and we are committed to being with you every step of the way. Our continuous monitoring services and proactive support ensure that the ICT solutions we provide are always adapting to emerging threats. We provide real-time insights, regular updates, and 24/7 support to keep your organization at the top of the business world."
                 
@@ -222,6 +222,7 @@ function Presentation() {
             <Grid item xs={12} lg={4} overflow="auto">
               <FilledInfoCard
                 color="info"
+                icon="mail"
                 title="Talk To Sales"
                 description="Climbing the success ladder doesn't have to be step by step. And because of you, HarInfo already scaled tough business growth phases so that you don't have to pass through them any more. We are already at the top, why not offer a partnership hand, so we can pull you up. We are not stopping anytime soon, but you can still catch up to us; so start growing with us now. Skip the lower levels of business growth, jumpstart your business by leveraging on our portfolio; experience a directly proportional growth with HarInfo today."
                 action={{

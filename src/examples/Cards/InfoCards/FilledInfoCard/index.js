@@ -40,14 +40,15 @@ function FilledInfoCard({ variant, color, icon, title, description, action }) {
 
   return (
     <MKBox
-      display={{ xs: "block", md: "flex" }}
+      // display={{ xs: "block", md: "flex" }}
       variant={variant}
       bgColor={variant === "contained" ? "grey-100" : color}
       borderRadius="xl"
       pt={1}
       pb={1}
       px={1}
-      height="300px"
+      height="280px"
+      alignItems="center"
     >
       <MKTypography
         display="block"
@@ -55,6 +56,8 @@ function FilledInfoCard({ variant, color, icon, title, description, action }) {
         color={iconColor}
         textGradient={variant === "contained"}
         mt={-0.625}
+        justifyContent="center"
+        textAlign="center"
       >
         {typeof icon === "string" ? <Icon>{icon}</Icon> : icon}
       </MKTypography>
@@ -65,6 +68,7 @@ function FilledInfoCard({ variant, color, icon, title, description, action }) {
           color={variant === "contained" || color === "light" ? "dark" : "white"}
           fontWeight="bold"
           mb={1}
+          textAlign="center"
         >
           {title}
         </MKTypography>

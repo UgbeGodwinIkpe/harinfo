@@ -198,10 +198,8 @@ function BlogPosts() {
         ))}
       </Slider>
     </div>
-
-    <div className={styles['blog-posts-section']}>
       <div className="carousel-container">
-      <h2 className="carousel-title">LATEST TECHNOLOGY NEWS - June 2024</h2>
+      <h3 className="carousel-title">Latest Technology News - <smal>June 2024</smal></h3>
       <Slider {...settings}>
         {news.map((news, index) => (
           <div key={index} className="carousel-item">
@@ -213,7 +211,6 @@ function BlogPosts() {
         ))}
       </Slider>
       </div>
-    </div>
 
     <div className={styles['blog-posts-section']}>
       <h2>Summary</h2>
@@ -224,10 +221,10 @@ function BlogPosts() {
       <div>
         <form>
           <div className={styles['subscription-form']}>
-          <h4>NEWSLETTERS</h4>
+          <h3>News Letters</h3>
         <p>Stay updated with the latest trends in technology, innovation, and business solutions by subscribing to our newsletter. Get insights, tips, and news delivered straight to your inbox, and never miss out on what’s happening in the world of HarInfo. Subscribe to our newsletter today.</p>
         
-            <input type="email" placeholder="Email Address" />
+            <input type="email" placeholder="Email Address" required />
             <button type="submit">Subscribe</button>
           </div>
         </form>

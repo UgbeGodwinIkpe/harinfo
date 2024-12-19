@@ -20,7 +20,7 @@ import digitalOceanLogo from "assets/images/logos/gray-logos/logo-digitalocean.s
 
 function Information() {
   return (
-    <MKBox component="section" py={12}>
+    <MKBox component="section" py={4}>
       <Container>
         <Grid
           container
@@ -38,9 +38,11 @@ function Information() {
             <DefaultReviewCard
               color="info"
               name="Corporate Solutions"
+              image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl_d2NjqTibasa15Mr0xSgCpGNlvyKjQFiSg&s"
               item1="- Consulting"
               item2="- Networking"
               item3="- Innovation"
+              icon="rocket"
               action={{
                   type: "internal",
                   route: "/services",
@@ -57,6 +59,7 @@ function Information() {
               item3="- Recruitment"
               item4="- Chat Support"
               item5="- Digital Content Creation"
+              icon="circle"
               action={{
                   type: "internal",
                   route: "#",
@@ -72,6 +75,7 @@ function Information() {
               item2="- Web & Mobile Application"
               item3="- Recruitment"
               item4="- Artificial Intelligence"
+              icon="code"
               action={{
                   type: "internal",
                   route: "#",
@@ -88,6 +92,7 @@ function Information() {
               item3="- Marketing"
               item4="- Technology"
               item4="- Development"
+              icon="blockchain"
               action={{
                   type: "internal",
                   route: "#",
@@ -96,7 +101,7 @@ function Information() {
             />
           </Grid>
         </Grid>
-        <Divider sx={{ my: 1 }} />
+        <hr/>
         
       </Container>
     </MKBox>

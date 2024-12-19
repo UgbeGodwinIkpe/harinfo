@@ -12,7 +12,7 @@ import MKTypography from "components/MKTypography";
 import MuiLink from "@mui/material/Link";
 import { Link } from "react-router-dom";
 
-function DefaultReviewCard({ color, image, name, date, review, rating, item1, item2, item3, item4, item5, action }) {
+function DefaultReviewCard({ color, image, icon, name, date, review, rating, item1, item2, item3, item4, item5, action }) {
   const buttonStyles = {
     width: "max-content",
     display: "flex",
@@ -109,24 +109,30 @@ function DefaultReviewCard({ color, image, name, date, review, rating, item1, it
       shadow={color === "transparent" ? "none" : "md"}
       p={3}
       height="250px"
+      alignItems="center"
+      justifyContent="center"
     >
-      {image && (
-        <MKAvatar
-          src={image}
-          alt={name}
-          variant="rounded"
-          size="lg"
-          shadow="md"
-          sx={{ mt: -5, mb: 1 }}
-        />
-      )}
+      
+      <MKTypography
+          display="block"
+          variant={image ? "h1" : "h1"}
+          fontWeight="bold"
+          color={color === "transparent" || color === "light" ? "dark" : "white"}
+          mb={0}
+          mt={-3}
+          textAlign="center"
+        >
+          {typeof icon === "string" ? <Icon>{icon}</Icon> : icon}
+        </MKTypography>
+       
       <MKBox lineHeight={1}>
         <MKTypography
           display="block"
-          variant={image ? "button" : "h5"}
+          variant={image ? "h5" : "h5"}
           fontWeight="bold"
           color={color === "transparent" || color === "light" ? "dark" : "white"}
-          mb={0.5}
+          mb={0}
+          textAlign="center"
         >
           {name}
         </MKTypography>
@@ -135,7 +141,7 @@ function DefaultReviewCard({ color, image, name, date, review, rating, item1, it
       <MKTypography
         variant="body2"
         color={color === "transparent" || color === "light" ? "text" : "white"}
-        my={2}
+        my={1}
       >
       {item1}<br/>{item2}<br/>{item3}<br/>{item4}<br/>{item5}
 

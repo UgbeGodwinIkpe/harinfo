@@ -31,7 +31,7 @@ function ClientsFeedbacks() {
 
   return (
     <div className={styles['testimonials-section']}>
-      <h3 style={{color:"white"}}>What Clients Think Of Us</h3>
+      <h2 style={{color:"white"}}>What Clients Think Of Us</h2>
       <div className={styles['testimonial-slider']}>
         <div className={styles['testimonial']}>
           <p>{testimonials[currentIndex].text}</p>
