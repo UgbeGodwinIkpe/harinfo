@@ -115,14 +115,13 @@ function AboutUs() {
                 },
               })}
             >
-              Work with an amazing design
+              We are HarInfo: a business and technology consulting firm.
             </MKTypography>
             <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
-              We&apos;re constantly trying to express ourselves and actualize our dreams. If you
-              have the opportunity to play this game
+              Always ready to go with you!
             </MKTypography>
             <MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
-              create account
+              Cntact US
             </MKButton>
             <MKTypography variant="h6" color="white" mt={8} mb={1}>
               Find us on

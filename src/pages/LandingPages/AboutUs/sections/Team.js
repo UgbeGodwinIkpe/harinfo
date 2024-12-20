@@ -1,17 +1,3 @@
-/*
-=========================================================
-* Material Kit 2 React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
 
 // @mui material components
 import Container from "@mui/material/Container";
@@ -59,8 +45,8 @@ function Team() {
               <HorizontalTeamCard
                 image={team1}
                 name="Emma Roberts"
-                position={{ color: "info", label: "UI Designer" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
+                position={{ color: "info", label: "Designation" }}
+                description="Some description about the memebr"
               />
             </MKBox>
           </Grid>
@@ -69,8 +55,8 @@ function Team() {
               <HorizontalTeamCard
                 image={team2}
                 name="William Pearce"
-                position={{ color: "info", label: "Boss" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
+                position={{ color: "info", label: "Designation" }}
+                description="Some description about the memebr"
               />
             </MKBox>
           </Grid>
@@ -79,8 +65,8 @@ function Team() {
               <HorizontalTeamCard
                 image={team3}
                 name="Ivana Flow"
-                position={{ color: "info", label: "Athlete" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
+                position={{ color: "info", label: "Designation" }}
+                description="Some description about the memebr"
               />
             </MKBox>
           </Grid>
@@ -89,8 +75,8 @@ function Team() {
               <HorizontalTeamCard
                 image={team4}
                 name="Marquez Garcia"
-                position={{ color: "info", label: "JS Developer" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
+                position={{ color: "info", label: "Designation" }}
+                description="Some description about the memebr"
               />
             </MKBox>
           </Grid>
