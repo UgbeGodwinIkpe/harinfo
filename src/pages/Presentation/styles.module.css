@@ -201,16 +201,7 @@
   .blog-posts-section {
     text-align: left;
   }
-  .testimonials-section {
-    height: 90vh;
-  }
 
-  .testimonial {
-    padding: 2px;
-    height: 70vh;
-    width: 90%;
-  margin: 0 auto;
-  }
   .testimonials-section h2{
     font-size: 1rem;
   }
@@ -221,7 +212,32 @@
     font-size: 1rem;
   }
 }
+@media only screen and (max-height: 900px) {
+  .testimonials-section {
+    height: 50vh;
+  }
 
+  .testimonial {
+    padding: 2px;
+    height: 40vh;
+    width: 90%;
+  margin: 0 auto;
+  }
+  
+}
+@media only screen and (max-height: 650px) {
+  .testimonials-section {
+    height: 70vh;
+  }
+
+  .testimonial {
+    padding: 2px;
+    height: 60vh;
+    width: 90%;
+  margin: 0 auto;
+  }
+  
+}
 /*style for news subscription form*/
 .subscription-form{
   width: 90vw;
