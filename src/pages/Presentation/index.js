@@ -49,7 +49,6 @@ import styles from './styles.module.css';
 // Images
 import bgImage from "assets/images/bg-presentation.jpg";
 import logoCT from "assets/images/logoCT.jpg";
-
 function Presentation() {
   return (
     <>
@@ -160,7 +159,7 @@ function Presentation() {
         <Container>
         <hr/>
         <Grid item xs={12} lg={5} ml="auto" sx={{ textAlign: { xs: "center", lg: "center" } }}>
-          <MKTypography variant="h3" fontWeight="bold" mb={0.5}>
+          <MKTypography variant="h3" mb={0.5} className={styles["why"]}>
                   Why Clients Love Us, And Why Prospects Choose Us
           </MKTypography>
         </Grid>

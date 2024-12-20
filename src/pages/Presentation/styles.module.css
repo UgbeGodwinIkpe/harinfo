@@ -88,6 +88,9 @@
 }
 }
 
+.why{
+  font-size: 2rem;
+}
 /*code for clients feebacks section*/
 .testimonials-section {
   background-color: var(--primary);
@@ -188,11 +191,20 @@
   }
   .blog-section {
   text-align: left;
-}
-.blog-posts-section {
-  text-align: left;
-}
+  }
+  .blog-posts-section {
+    text-align: left;
+  }
 
+  .testimonials-section h2{
+    font-size: 1rem;
+  }
+  .testimonial p{
+    font-size: 1rem;
+  }
+  .why{
+  font-size: 1rem;
+}
 }
 
 /*style for news subscription form*/
