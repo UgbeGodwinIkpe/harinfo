@@ -195,7 +195,14 @@
   .blog-posts-section {
     text-align: left;
   }
+  .testimonials-section {
+    height: 90vh;
+  }
 
+  .testimonial {
+    padding: 5px;
+    height: 80vh;
+  }
   .testimonials-section h2{
     font-size: 0.6rem;
   }
@@ -203,8 +210,8 @@
     font-size: 0.6rem;
   }
   .why{
-  font-size: 1rem;
-}
+    font-size: 1rem;
+  }
 }
 
 /*style for news subscription form*/
