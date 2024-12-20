@@ -20,10 +20,10 @@ function DefaultFooter({ content }) {
     <MKBox component="footer" color="info">
       <Container>
         <Grid container spacing={3}>
-          <Grid item xs={12} md={3} sx={{ ml: "10px", mb: 3 }}>
+          <Grid item xs={12} md={4} sx={{ ml: "10px", mb: 3 }}>
             <MKBox>
               <Link to={brand.route}>
-                <MKBox component="img" src={brand.image} alt={brand.name} maxWidth="6rem" mb={2} />
+                <MKBox component="img" src={brand.image} alt={brand.name} maxWidth="7rem" mb={2} />
               </Link>
               <MKTypography variant="h5">{brand.name}</MKTypography>
               <p>{brand.desc}</p>

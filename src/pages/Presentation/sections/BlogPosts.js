@@ -218,18 +218,20 @@ function BlogPosts() {
       <p>Stay tuned to our blog for more informative articles on industry trends, business tips, and technological advancements. Together, we can unlock your business's full potential and achieve remarkable success</p>
       <p>For more information on how HarInfo can help your business thrive, contact us today at info@harinfo.com</p>
       <p>Let's embark on a journey of growth and transformation together.</p>
-      <div>
+      
+    </div>
+    <div className={styles['subscription-form']}>
         <form>
-          <div className={styles['subscription-form']}>
-          <h3>News Letters</h3>
-        <p>Stay updated with the latest trends in technology, innovation, and business solutions by subscribing to our newsletter. Get insights, tips, and news delivered straight to your inbox, and never miss out on what’s happening in the world of HarInfo. Subscribe to our newsletter today.</p>
-        
-            <input type="email" placeholder="Email Address" required />
-            <button type="submit">Subscribe</button>
+          <div className={styles['subscription-form-overlay']}>
+            <div className={styles['subscription-form-content']}>
+              <h1>News Letters</h1>
+              <p>Stay updated with the latest trends in technology, innovation, and business solutions by subscribing to our newsletter. Get insights, tips, and news delivered straight to your inbox, and never miss out on what’s happening in the world of HarInfo. Subscribe to our newsletter today.</p>
+              <input type="email" placeholder="Email Address" required />
+              <button type="submit">Subscribe</button>
+            </div>
           </div>
         </form>
       </div>
-    </div>
     </section>
   );
 };
