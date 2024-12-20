@@ -94,7 +94,7 @@ export default {
     },
 
     info: {
-      main: "#00FFFF",
+      main: "#00008B",
       state: "#1A73E8",
     },
 
@@ -114,7 +114,7 @@ export default {
     },
 
     light: {
-      main: "#EBEFF4",
+      main: "#00FFFF", // #EBEFF4
       state: "#CED4DA",
     },
 

@@ -83,7 +83,7 @@ function DefaultNavbar({ brand, routes, transparent, light, info, primary, actio
         }
       }}
       onMouseLeave={() => collapse && setDropdown(null)}
-      light={light}
+      light="white"
     />
   ));
 
@@ -445,7 +445,7 @@ function DefaultNavbar({ brand, routes, transparent, light, info, primary, actio
         width={relative ? "100%" : "calc(100% - 48px)"}
         borderRadius="xl"
         shadow={transparent ? "none" : "md"}
-        color={info}
+        color={primary}
         position={relative ? "relative" : "absolute"}
         left={0}
         zIndex={3}
@@ -462,7 +462,7 @@ function DefaultNavbar({ brand, routes, transparent, light, info, primary, actio
             py={transparent ? 1.5 : 0.75}
             pl={relative || transparent ? 0 : { xs: 0, lg: 1 }}
           >
-            <MKTypography variant="button" fontSize="30px" fontFamily="Impact, sans-serif" fontWeight="800" color={info}>
+            <MKTypography variant="button" fontSize="30px" fontFamily="Impact, sans-serif" fontWeight="800" color="white">
               {brand}
             </MKTypography>
           </MKBox>

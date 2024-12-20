@@ -34,6 +34,7 @@ function DefaultNavbarMobile({ routes, open }) {
         href={href}
         route={route}
         collapse={Boolean(navCollapse)}
+        color="white"
       >
         <MKBox sx={{ height: "15rem", maxHeight: "15rem", overflowY: "scroll" }}>
           {routeCollapses &&
@@ -48,6 +49,7 @@ function DefaultNavbarMobile({ routes, open }) {
                       textTransform="capitalize"
                       py={1}
                       px={0.5}
+                      color="white"
                     >
                       {item.name}
                     </MKTypography>
@@ -62,7 +64,7 @@ function DefaultNavbarMobile({ routes, open }) {
                         minWidth="11.25rem"
                         display="block"
                         variant="button"
-                        color="text"
+                        color="white"
                         textTransform="capitalize"
                         fontWeight="regular"
                         py={0.625}
