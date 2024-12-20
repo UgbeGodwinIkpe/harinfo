@@ -96,6 +96,8 @@
   background-color: var(--primary);
   /*#f7f7f7*/
   /*padding: 2px;*/
+  display: grid;
+  place-items: center;
   margin-bottom: 30px;
   padding-top: 10px;
   text-align: center;
@@ -200,20 +202,20 @@
     text-align: left;
   }
   .testimonials-section {
-    height: 95vh;
+    height: 90vh;
   }
 
   .testimonial {
     padding: 2px;
-    height: 80vh;
+    height: 70vh;
     width: 90%;
   margin: 0 auto;
   }
   .testimonials-section h2{
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
   .testimonial p{
-    font-size: 0.6rem;
+    font-size: 0.9rem;
   }
   .why{
     font-size: 1rem;
