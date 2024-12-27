@@ -7,8 +7,17 @@ import Icon from "@mui/material/Icon";
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
-
+import {useState} from "react";
+import styles from './styles.module.css';
 function BuiltByDevelopers() {
+  const [zoom, setZoom]=useState(false);
+  const handleMouseOver=()=>{
+    setZoom(true);
+  }
+  const handleMouseOut=()=>{
+    setZoom(false);
+  }
+
   const bgImage =
     "https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/desktop.jpg";
 
@@ -29,6 +38,7 @@ function BuiltByDevelopers() {
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
+      className={styles['zoom-box']}
     >
       <Container>
         <Grid container item xs={12} lg={8} sx={{ ml: { xs: 0, lg: 8 } }}>
@@ -101,6 +111,7 @@ function BuiltByDevelopers() {
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
+       className={styles['zoom-box']}
     >
       <Container>
         <Grid container item xs={12} lg={11} sx={{ ml: { xs: 0, lg: 10 } }}>

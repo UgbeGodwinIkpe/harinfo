@@ -41,7 +41,7 @@ const Careers = () => {
   return (
     <section className="careers-section">
       <div className="careers-header">
-        <h2>Careers <span>[Join Our Team]</span></h2>
+        <h2>Join Our Team</h2>
         <p>Would you like to join a dynamic and evolving workplace? We are more than eager to have you onboard.</p>
         <p>Get in touch with us through <a href="mailto:career@harinfo.com">career@harinfo.com</a></p>
         <p>We await your message!</p>

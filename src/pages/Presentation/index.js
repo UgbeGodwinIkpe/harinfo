@@ -49,7 +49,20 @@ import styles from './styles.module.css';
 // Images
 import bgImage from "assets/images/bg-presentation.jpg";
 import logoCT from "assets/images/logoCT.jpg";
+import {useState, useEffect} from "react";
 function Presentation() {
+  const [opacity, setOpacity]=useState(0);
+  useEffect(()=>{
+    const intervalId=setInterval(()=>{
+      setOpacity((prevOpacity)=>{
+        if(prevOpacity<1){
+          return prevOpacity+0.1;
+        }
+        return 0;
+      }, 200);
+      return ()=>clearInterval(intervalId);
+    }, []);
+  })
   return (
     <>
     <div className={styles['top-bar']}>
@@ -132,6 +145,7 @@ function Presentation() {
               textAlign="center"
               px={{ xs: 6, lg: 12 }}
               mt={1}
+              style={{opacity}}
             >
               We are HarInfo: a business and technology consulting firm. And more. You may be wondering “What more?”.
             </MKTypography>

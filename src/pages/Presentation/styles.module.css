@@ -238,6 +238,20 @@
   }
   
 }
+@media only screen and (max-height: 400px) {
+  .testimonials-section {
+    height: 100vh;
+    padding: 1px;
+  }
+
+  .testimonial {
+    padding: 2px;
+    height: 95vh;
+    width: 95%;
+  margin: 0 auto;
+  }
+  
+}
 /*style for news subscription form*/
 .subscription-form{
   width: 90vw;

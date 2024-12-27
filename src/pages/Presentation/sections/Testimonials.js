@@ -30,7 +30,7 @@ function Information() {
           justifyContent="center"
           sx={{ mx: "auto", textAlign: "center" }}
         >
-          <MKTypography variant="h2" color="info">Our Services</MKTypography>
+          <MKTypography variant="h2" color="primary">Our Services</MKTypography>
           
         </Grid>
         <Grid container spacing={3} sx={{ mt: 8 }}>

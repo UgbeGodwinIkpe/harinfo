@@ -58,16 +58,7 @@ const routes = [
           },
         ],
       },
-      // {
-      //   name: "account",
-      //   collapse: [
-      //     {
-      //       name: "sign in",
-      //       route: "/pages/authentication/sign-in",
-      //       component: <SignIn />,
-      //     },
-      //   ],
-      // },
+      
     ],
   },
   {
@@ -163,7 +154,7 @@ const routes = [
       },
       {
         name: "Categories of Business",
-        description: "See all categories",
+        description: "",
         dropdown: true,
         collapse: [
           {
@@ -183,34 +174,7 @@ const routes = [
           },
         ],
       },
-      {
-        name: "Others",
-        description: "",
-        dropdown: true,
-        collapse: [
-          {
-            name: "Partner",
-            route: "/sections/elements/avatars",
-            component: <Avatars />,
-          },
-          {
-            name: "Industries",
-            route: "/sections/elements/badges",
-            component: <Badges />,
-          },
-          {
-            name: "Career",
-            route: "/sections/elements/breadcrumbs",
-            component: <BreadcrumbsEl />,
-          },
-          {
-            name: "Contact Us",
-            route: "/sections/elements/buttons",
-            component: <Buttons />,
-          },
-          
-        ],
-      },
+      
     ],
   },
   
@@ -219,6 +183,33 @@ const routes = [
     icon: "",
     href: "#",
   },
+  {
+    name: "MORE",
+    icon: <Icon>view_day</Icon>,
+    collapse: [
+      {
+        name: "Partner",
+        route: "/sections/elements/avatars",
+        component: <Avatars />,
+      },
+      {
+        name: "Industries",
+        route: "/sections/elements/badges",
+        component: <Badges />,
+      },
+      {
+        name: "Career",
+        route: "/sections/elements/breadcrumbs",
+        component: <BreadcrumbsEl />,
+      },
+      {
+        name: "Contact Us",
+        route: "/sections/elements/buttons",
+        component: <Buttons />,
+      },
+      
+    ],
+},
 ];
 
 export default routes;
