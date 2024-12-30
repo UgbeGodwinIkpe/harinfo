@@ -28,6 +28,7 @@ import ClientsFeedbacks from "pages/Presentation/sections/ClientsFeedbacks";
 import BlogPosts from "pages/Presentation/sections/BlogPosts";
 import FAQs from "pages/Presentation/sections/FAQs";
 import JoinUs from "pages/Presentation/sections/JoinUs";
+import NewsLetter from "pages/Presentation/sections/NewsLetter";
 import Careers from "pages/Presentation/sections/Careers";
 
 // Presentation page components
@@ -180,7 +181,7 @@ function Presentation() {
           </MKTypography>
         </Grid>
           <Grid container spacing={3}>
-            <Grid item xs={12} lg={4} overflow="auto" style={{alignItems:"center"}}>
+            <Grid item xs={12} lg={4} style={{alignItems:"center"}}>
               <FilledInfoCard
                 variant="gradient"
                 color="info"
@@ -194,7 +195,7 @@ function Presentation() {
                 // }}
               />
             </Grid>
-            <Grid item xs={12} lg={4} overflow="auto">
+            <Grid item xs={12} lg={4}>
               <FilledInfoCard
                 variant="gradient"
                 color="info"
@@ -204,7 +205,7 @@ function Presentation() {
                 
               />
             </Grid>
-            <Grid item xs={12} lg={4} overflow="auto">
+            <Grid item xs={12} lg={4}>
               <FilledInfoCard
                 variant="gradient"
                 color="info"
@@ -214,7 +215,7 @@ function Presentation() {
                 
               />
             </Grid>
-            <Grid item xs={12} lg={4} overflow="auto">
+            <Grid item xs={12} lg={4}>
               <FilledInfoCard
                 variant="gradient"
                 color="info"
@@ -224,7 +225,7 @@ function Presentation() {
                 
               />
             </Grid>
-            <Grid item xs={12} lg={4} overflow="auto">
+            <Grid item xs={12} lg={4}>
               <FilledInfoCard
                 variant="gradient"
                 color="info"
@@ -234,7 +235,7 @@ function Presentation() {
                 
               />
             </Grid>
-            <Grid item xs={12} lg={4} overflow="auto">
+            <Grid item xs={12} lg={4}>
               <FilledInfoCard
                 color="info"
                 icon="mail"
@@ -254,6 +255,12 @@ function Presentation() {
         <Mvv />
         <ClientsFeedbacks />
         <BlogPosts />
+        <MKBox pt={5} pb={6}>
+          <Container>
+            <NewsLetter />
+          </Container>
+        </MKBox>
+
         <MKBox pt={5} pb={6}>
           <Container>
             <FAQs />

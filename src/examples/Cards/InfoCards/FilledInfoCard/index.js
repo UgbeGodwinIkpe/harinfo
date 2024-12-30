@@ -49,6 +49,7 @@ function FilledInfoCard({ variant, color, icon, title, description, action }) {
       px={1}
       height="280px"
       alignItems="center"
+      overflow="auto"
     >
       <MKTypography
         display="block"
