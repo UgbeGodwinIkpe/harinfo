@@ -199,7 +199,7 @@ function BlogPosts() {
       </Slider>
     </div>
       <div className="carousel-container">
-      <h3 className="carousel-title">Latest Technology News - <smal>June 2024</smal></h3>
+      <h2 className="carousel-title">Latest Technology News - <small>June 2024</small></h2>
       <Slider {...settings}>
         {news.map((news, index) => (
           <div key={index} className="carousel-item">
