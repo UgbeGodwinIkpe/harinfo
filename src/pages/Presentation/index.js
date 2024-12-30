@@ -137,7 +137,9 @@ function Presentation() {
               px={{ xs: 6, lg: 12 }}
               mt={1}
             >
+            <marquee direction="left">
               The Fertile Soil For Your Business Growth.
+            </marquee>
             </MKTypography>
             <MKTypography
               variant="body1"
