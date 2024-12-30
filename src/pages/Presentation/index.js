@@ -59,7 +59,7 @@ function Presentation() {
           return prevOpacity+0.1;
         }
         return 0;
-      }, 200);
+      }, 400);
       return ()=>clearInterval(intervalId);
     }, []);
   })
@@ -180,7 +180,7 @@ function Presentation() {
           </MKTypography>
         </Grid>
           <Grid container spacing={3}>
-            <Grid item xs={12} lg={4} style={{alignItems:"center"}}>
+            <Grid item xs={12} lg={4} overflow="auto" style={{alignItems:"center"}}>
               <FilledInfoCard
                 variant="gradient"
                 color="info"
@@ -194,7 +194,7 @@ function Presentation() {
                 // }}
               />
             </Grid>
-            <Grid item xs={12} lg={4}>
+            <Grid item xs={12} lg={4} overflow="auto">
               <FilledInfoCard
                 variant="gradient"
                 color="info"
@@ -204,7 +204,7 @@ function Presentation() {
                 
               />
             </Grid>
-            <Grid item xs={12} lg={4}>
+            <Grid item xs={12} lg={4} overflow="auto">
               <FilledInfoCard
                 variant="gradient"
                 color="info"
@@ -214,7 +214,7 @@ function Presentation() {
                 
               />
             </Grid>
-            <Grid item xs={12} lg={4}>
+            <Grid item xs={12} lg={4} overflow="auto">
               <FilledInfoCard
                 variant="gradient"
                 color="info"
@@ -224,7 +224,7 @@ function Presentation() {
                 
               />
             </Grid>
-            <Grid item xs={12} lg={4}>
+            <Grid item xs={12} lg={4} overflow="auto">
               <FilledInfoCard
                 variant="gradient"
                 color="info"
