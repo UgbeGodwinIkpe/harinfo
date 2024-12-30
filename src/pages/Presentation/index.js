@@ -255,7 +255,7 @@ function Presentation() {
         <Mvv />
         <ClientsFeedbacks />
         <BlogPosts />
-        <MKBox pt={5} pb={6}>
+        <MKBox pt={3} pb={3}>
           <Container>
             <NewsLetter />
           </Container>
