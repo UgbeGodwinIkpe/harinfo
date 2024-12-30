@@ -189,6 +189,9 @@
   .blog-posts-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .summary {
+    height: fit-content;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -198,7 +201,7 @@
   .blog-section {
   text-align: left;
   }
-  .blog-posts-section {
+  .blog-posts-section, .summary {
     text-align: left;
   }
 
@@ -382,5 +385,28 @@
 @media only screen and (max-width: 480px) {
   .faq-question {
     font-size: 16px;
+  }
+}
+
+.summary{
+  padding: 50px;
+  text-align: justify;
+  background: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  /*background-image: url(https://easy-peasy.ai/ai-image-generator/images/hacker-boy-pixel-art-8bdc8efd-fecb-4bca-9f48-68170ab13413);*/
+  color: white;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  animation: run 2s steps(8) infinite;
+}
+
+@keyframes run{
+  0%{
+    background-position: 0 0;
+  }
+  100%{
+    background-position: -1600px 0;
   }
 }

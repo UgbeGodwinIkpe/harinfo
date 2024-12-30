@@ -212,7 +212,7 @@ function BlogPosts() {
       </Slider>
       </div>
 
-    <div className={styles['blog-posts-section']}>
+    <div className={styles['summary']}>
       <h2>Summary</h2>
       <p>At HarInfo, we are committed to helping you navigate the ever-changing business landscape by providing innovative solutions and strategic insights. Our expertise spans across various industries, and we leverage the latest technologies to drive your success. Whether you need assistance with digital transformation, cybersecurity, AI, or any other area, we are here to support you every step of the way.</p>
       <p>Stay tuned to our blog for more informative articles on industry trends, business tips, and technological advancements. Together, we can unlock your business's full potential and achieve remarkable success</p>
