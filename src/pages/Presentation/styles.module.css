@@ -398,6 +398,7 @@
   height: 80vh;
   justify-content: center;
   align-items: center;
+  overflow-y: auto;
   animation: run 2s steps(8) infinite;
 }
 
