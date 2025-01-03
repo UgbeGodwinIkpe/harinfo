@@ -91,7 +91,7 @@ function DefaultFooter({ content }) {
           ))}
           <Grid item xs={12} md={3} sx={{mb: 3 }}>
               <MKBox>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.7235407173744!2d-87.62718892391547!3d41.8772941712418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2d0006e5d331%3A0x8571462bc251ad03!2sHarInfo!5e0!3m2!1sen!2sng!4v1735894037843!5m2!1sen!2sng" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.7235407173744!2d-87.62718892391547!3d41.8772941712418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2d0006e5d331%3A0x8571462bc251ad03!2sHarInfo!5e0!3m2!1sen!2sng!4v1735894037843!5m2!1sen!2sng" width="100%" height="300" style={{border:"0"}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </MKBox>
           </Grid>
           <Grid item xs={12} sx={{ textAlign: "center", my: 3 }}>
